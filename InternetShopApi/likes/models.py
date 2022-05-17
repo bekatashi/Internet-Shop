@@ -5,7 +5,7 @@ user = get_user_model()
 
 class Likes(models.Model):
     # product = models.ForeignKey(Products, on_delete=models.CASCADE)
-    seller = models.ForeignKey(user, on_delete=models.CASCADE)
+    user = models.ForeignKey(user, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = 'like'
